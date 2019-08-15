@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tính điểm tốt nghiệp THPT Quốc gia</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <h1 class="brand">Tính điểm tốt nghiệp THPT Quốc Gia </h1>
+  <hr>
+
+
+
+
+
+
+  <form action="javascript:tinhdiem()">
+    <div class="container">
+      <div class="parent_block">
+        <div class="child_block">
+          <label>Toán</label>
+          <input type="text" class="xinput" id="diem_toan" min="0" required>
+        </div>
+        <div class="child_block">
+          <label>Ngữ Văn</label>
+          <input type="text" class="xinput" id="diem_van" min="0" required>
+        </div>
+        <div class="child_block">
+          <label>Ngoại ngữ</label>
+          <input type="text" class="xinput" id="diem_anh" min="0" required>
+        </div>
+      </div>
+
+
+
+
+      <div class="parent_block">
+        <div class="child_block">
+          <label>Môn thứ nhất</label>
+          <input type="text" class="xinput" id="diem_mon_1" min="0" required>
+        </div>
+        <div class="child_block">
+          <label>Môn thứ hai</label>
+          <input type="text" class="xinput" id="diem_mon_2" min="0" required>
+        </div>
+        <div class="child_block">
+          <label>Môn thứ ba</label>
+          <input type="text" class="xinput" id="diem_mon_3" min="0" required>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="parent_block">
+        <div class="child_block">
+          <label>Điểm TB năm 12</label>
+          <input type="text" class="xinput" id="diem_tb_12" min="0" required>
+        </div>
+        <div class="child_block">
+          <label>Điểm khuyến khích</label>
+          <input type="text" class="xinput" id="diem_khuyen_khich" value="0" min="0" required>
+        </div>
+        <div class="child_block">
+          <label>Điểm ưu tiên</label>
+          <input type="text" class="xinput" id="diem_uu_tien" value="0" min="0" required>
+        </div>
+      </div>
+
+
+
+
+
+
+      <button type="submit" class="xbutton">Tính điểm tốt nghiệp</button>
+     
+     
+     
+     
+     
+     
+      <div class="text-center" id="result" style="display: none;">
+        <hr>
+        <p>Điểm tốt nghiệp của bạn là <span id="diem_tot_nghiep">[pending]</span></p>
+        <p style="display: none;" id="ok" class="green">Chúc mừng bạn đã đậu tốt nghiệp</p>
+        <p style="display: none;" id="fail" class="red">Chúc bạn may mắn lần sau :(</p>
+      </div>
+    
+    
+    
+    </div>
+  </form>
+</body>
+
+<script src="main.js"></script>
+</html>
